@@ -56,6 +56,8 @@ body {
 
 .nav-link {
   position: relative;
+  padding: 32px 0;
+  display: inline-block;
   text-decoration: none;
   font-size: 14px;
   line-height: 1.14;
@@ -87,6 +89,10 @@ body {
 }
 
 .auth-link {
+  display: flex;
+  padding: 32px 0;
+  align-items: center;
+  gap: 10px;
   color: var(--main-text-color);
   text-decoration: none;
   font-size: 14px;
@@ -99,6 +105,10 @@ body {
 .auth-link:hover,
 .auth-link:focus {
   color: var(--highlight-color);
+}
+
+.auth-link .icon {
+  fill: currentColor;
 }
 
 .hero-title {
@@ -294,24 +304,6 @@ p {
 
 .auth-nav .item:not(:first-child) {
   margin-left: 50px;
-}
-
-.nav-link,
-.auth-link {
-  padding: 32px 0;
-  display: inline-block;
-}
-
-.auth-link {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  transition: fill 250ms var(--trans-timing-function);
-}
-
-.auth-link:hover,
-.auth-link:focus {
-  fill: var(--highlight-color);
 }
 
 .section {
